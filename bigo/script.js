@@ -13,5 +13,6 @@ function calcSum(num) {
     console.log("Calculate 100", (t1-t0));
     console.log(sum);
 }
+calcSum(nums); // O(n) --> Linear Time
 
-calcSum(nums);
+
