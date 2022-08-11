@@ -16,4 +16,4 @@ function findBook(arr) {
 
 findBook(books); 
 
-// BigO rule 1 (only concern of the worse case)
+// BigO rule 1 (only concern of the worst case)
