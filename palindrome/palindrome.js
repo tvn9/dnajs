@@ -25,7 +25,7 @@
 
 // Solutions 
 // 
-let palindrome = "rotator";
+let palindrome = "abba";
 
 // Not the recomanded solution due to double validation
 function checkPalindrome1(str) {
@@ -55,10 +55,19 @@ function checkPalindrome2(str) {
 }
 console.log(checkPalindrome2(palindrome));
 
-// Solution 3 - useing JS built-in string functions
+// Solution 3 - using JS built-in string and array functions
 function checkPalindrome3(str) {
-  let newStr = str;
-  newStr.split("").reverse().join("");
-  return str === newStr;
+  const newStr = str;
+  const rev = newStr.split("").reverse().join("");
+  return rev === newStr;
 }
 console.log(checkPalindrome3(palindrome));
+
+
+// Solution 4 - using every array built-in function 
+function checkPalindrome4(str) {
+  return str.split("").every((char, i) => {
+    return char === str[str.length - (i + 1)];
+  });
+}
+console.log(checkPalindrome4(palindrome));
