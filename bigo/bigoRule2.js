@@ -16,4 +16,4 @@ function printItems(items) {
     }
 }
 
-// BIGO O(n/2 + 1)
+// BIGO O(n/2 + 1) => O(a)
