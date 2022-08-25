@@ -4,12 +4,6 @@
 const fullName = "Thanh Vu Nguyen"
 const stringMap = {};
 
-
-
-
-
-
-
 function maxRepChar(str) {
   // Iterate through the string
   for (char of fullName) {
