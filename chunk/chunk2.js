@@ -9,17 +9,14 @@ const givenArr = [1, 2, 3, 4, 5, 6, 7, 8];
 const chNum = 3
 
 function chunk(inArr, chNum) {
-  // Create a new empty chunk array 
-  const newChunkArr = [];
+  const chunkArr = [];
+  let index = 0;
 
-  for (let el of inArr) {
-    const end = newChunkArr[newChunkArr.length - 1];
-    if (!end || end.length === chNum) {
-      newChunkArr.push([el]);
-    } else {
-      end.push(el);
-    }
+  while (index < inArr.length) {
+    chunkArr.push(inArr.slice(index, index + chNum));
+    index += chNum;
   }
-  return newChunkArr;
+  return chunkArr;
 }
 console.log(chunk(givenArr, chNum));
+
