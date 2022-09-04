@@ -7,4 +7,4 @@ function fib(n) {
   return numbers;
 }
 console.log(fib(4));
-console.log(fib(5));
+console.log(fib(30));
