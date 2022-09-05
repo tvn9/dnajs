@@ -26,6 +26,9 @@ function biSearch(arr, n, offset) {
   }
   console.log(first, last);
   return biSearch(sArray.slice(first, last + 1), n, offset);
+  // a = 1; b = 2; O(n^log2 1) => O(1)
+  // Overall algorithm time complexity:
+  // O(n^logb a * log n) => O(1 * log n) => O(log n)
 }
 console.log(sortInt(biArray));
 console.log("found", search, "at index", biSearch(biArray, search, 0));
