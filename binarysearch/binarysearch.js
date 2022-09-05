@@ -2,7 +2,7 @@
 
 // Given array 
 const biArray = [2, 5, 9, 3, 8, 23, 45, 56, 21, 34];
-const search = 8;
+const search = 56;
 
 function sortInt(arr) {
   return arr.sort(function (a, b) { return a - b });
